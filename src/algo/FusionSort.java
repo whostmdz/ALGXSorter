@@ -57,5 +57,18 @@ public class Fusionner{
 
 
 public class FusionSort implements Sorter{
-
+    @Override
+    public void sort(int[] L){
+        int q;
+        if(p<r){
+            q=(p+r)/2;
+            sort(L,p,q);
+            sort(L,q+1,r);
+            Fusionner(L,p,q,r);
+        }
+    }
+    @Override
+    public String nameAlgo(){
+        return "Fusion sort";
+    }
 }
