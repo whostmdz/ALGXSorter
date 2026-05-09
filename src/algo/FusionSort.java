@@ -27,11 +27,29 @@ public class Fusionner{
         int ng = q-p+1;
         int nd = r-q;
 
-        int[] L = new int[n1];
-        int[] R = new int[n2];
+        int[] G = new int[n1];
+        int[] D = new int[n2];
 
-        
+        Copier(L,p,G,0,ng);
+        Copier(L,q+1,D,0,nd);
 
+        int i=0;
+        int j=0;
+        int k=p;
+
+        while(i<ng && j<nd){
+            if(G[i]<=D[j]){
+                L[k]=G[i];
+                i++;
+            }
+            else{
+                L[k]=D[j];
+                j++;
+            }
+            k++
+
+    }
+    Copier(G,i,L,k,ng-i);
     }
 
 }
