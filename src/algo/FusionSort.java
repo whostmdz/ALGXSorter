@@ -12,7 +12,6 @@ package algo;
 //Exercice 1 : Écrivez un algorithme Copier(X,i,Y,j,n) 
 // qui copie n valeurs consécutives du tableau X en partant 
 // de i dans le tableau à partir de j. 
-// Faites la preuve de justesse et la preuve d'arrêt. 
 
 public class Copier {
     public void copy(int[] X, int i, int[] Y, int j, int n) {
@@ -53,8 +52,6 @@ public class Fusionner{
     }
 
 }
-
-
 
 public class FusionSort implements Sorter{
     @Override
